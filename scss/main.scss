@@ -1,8 +1,5 @@
 @import "config";
-
-@mixin easeOut {
-  transition: all 0.5s ease-out;
-}
+@import "menu";
 
 @mixin background {
   @if $show-home-image {
