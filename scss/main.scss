@@ -1,6 +1,11 @@
 @import "config";
 @import "menu";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @mixin background {
   @if $show-home-image {
     &#bg-img {
