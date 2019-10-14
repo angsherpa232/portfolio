@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -53,7 +52,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url(../img/ang.jpg);
+      background-size: cover;
       border: 2px solid #0a8ec2;
       border-radius: 50%; }
   .menu .nav-item {
@@ -208,6 +208,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
+      border-radius: 10px;
       background: #0a8ec2;
       color: #fff; }
       .boxes div:hover span {
@@ -268,7 +269,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/portrait_small.jpg);
+      background: url(../img/ang.jpg);
       width: 150px;
       height: 150px; }
   .about-info {

@@ -43,7 +43,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -88,7 +87,8 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url(../img/ang.jpg);
+      background-size: cover;
       border: 2px solid $secondary-color;
       border-radius: 50%;
     }
