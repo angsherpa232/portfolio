@@ -27,9 +27,7 @@ h3 {
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 
@@ -55,6 +53,11 @@ main {
 
   .icons {
     margin-top: 1rem;
+    animation-name: icons;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
     a {
       padding: 0.4rem;
       &:hover {
@@ -66,9 +69,36 @@ main {
 
   &#home {
     overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
+  }
+
+  .card {
+    max-width: 780px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.27);
+    position: relative;
+    margin-top: 20vh;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: card;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes card {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes icons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
