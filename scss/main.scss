@@ -113,6 +113,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
+    width: 180px;
     grid-area: bioimage;
     border-radius: 50%;
     border: 3px solid $secondary-color;
@@ -194,6 +195,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  cursor: pointer;
 
   &:hover {
     background: $secondary-color;
@@ -219,6 +221,16 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+//Resume
+.resume {
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+
+  &.btn-light {
+    border-radius: 5px;
+  }
 }
 
 @import "mobile";
